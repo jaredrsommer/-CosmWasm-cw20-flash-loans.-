@@ -1,5 +1,7 @@
 # Build results
 /target
+target/
+Cargo.lock
 
 # Cargo+Git helper file (https://github.com/rust-lang/cargo/blob/0.44.1/src/cargo/sources/git/utils.rs#L320-L327)
 .cargo-ok
@@ -7,9 +9,74 @@
 # Text file backups
 **/*.rs.bk
 
+# CosmWasm artifacts
+artifacts/
+*.wasm
+*.wasm.gz
+schema/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Python / CLI
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+*.egg-info/
+dist/
+build/
+
+# Node.js / WebUI
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnp
+.pnp.js
+coverage/
+webui/build/
+webui/.env.local
+webui/.env.production.local
+.cache/
+.npm
+.yarn-integrity
+
+# Deployment info
+deployment-*.json
+DEPLOYED_CONTRACTS.md
+
+# Logs
+*.log
+logs/
+
+# Keys and secrets (IMPORTANT!)
+*.key
+*.pem
+mnemonic.txt
+keys/
+.secrets/
+
 # macOS
 .DS_Store
+Thumbs.db
 
 # IDEs
 *.iml
 .idea
+.vscode/
+*.swp
+*.swo
+*~
+
+# Temporary files
+*.tmp
+*.temp
+tmp/
+temp/

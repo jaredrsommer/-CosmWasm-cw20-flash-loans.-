@@ -1,0 +1,52 @@
+{
+  "networks": {
+    "mainnet": {
+      "chain_id": "coreum-mainnet-1",
+      "rpc_endpoint": "https://full-node.mainnet-1.coreum.dev:26657",
+      "grpc_endpoint": "https://full-node.mainnet-1.coreum.dev:9090",
+      "rest_endpoint": "https://full-node.mainnet-1.coreum.dev:1317",
+      "denom": "ucore",
+      "gas_price": "0.0625ucore",
+      "prefix": "core"
+    },
+    "testnet": {
+      "chain_id": "coreum-testnet-1",
+      "rpc_endpoint": "https://full-node.testnet-1.coreum.dev:26657",
+      "grpc_endpoint": "https://full-node.testnet-1.coreum.dev:9090",
+      "rest_endpoint": "https://full-node.testnet-1.coreum.dev:1317",
+      "denom": "utestcore",
+      "gas_price": "0.0625utestcore",
+      "prefix": "testcore"
+    },
+    "devnet": {
+      "chain_id": "coreum-devnet-1",
+      "rpc_endpoint": "https://full-node.devnet-1.coreum.dev:26657",
+      "grpc_endpoint": "https://full-node.devnet-1.coreum.dev:9090",
+      "rest_endpoint": "https://full-node.devnet-1.coreum.dev:1317",
+      "denom": "udevcore",
+      "gas_price": "0.0625udevcore",
+      "prefix": "devcore"
+    }
+  },
+  "contracts": {
+    "flash_loan": {
+      "name": "cw-flash-loan",
+      "version": "0.1.0",
+      "wasm_path": "contracts/cw-flash-loan/artifacts/cw_flash_loan.wasm"
+    },
+    "simple_receiver": {
+      "name": "cw-simple-loan-receiver",
+      "version": "0.1.0",
+      "wasm_path": "contracts/cw-simple-loan-receiver/artifacts/cw_simple_loan_receiver.wasm"
+    },
+    "ibc_receiver": {
+      "name": "cw-ibc-loan-receiver",
+      "version": "0.1.0",
+      "wasm_path": "contracts/cw-ibc-loan-receiver/artifacts/cw_ibc_loan_receiver.wasm"
+    }
+  },
+  "deployment": {
+    "fee_percentage": "0.003",
+    "admin_address": null
+  }
+}
